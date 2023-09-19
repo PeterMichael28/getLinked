@@ -1,0 +1,29 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+body{
+  background: #150E28;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  overflow-x: hidden;
+}
+
+.font-clash {
+  font-family: 'Clash Display', sans-serif;
+  /* font-weight: bold; */
+  /* color: #61e6f0d2; */
+}
+
+
+.navLinks{
+  @apply text-white font-normal text-[.9rem] transition-all duration-300 hover:scale-110 hover:bg-bgGradient hover:bg-clip-text hover:text-transparent cursor-pointer
+}
+
+.buttons {
+  @apply text-white font-[.9rem] font-normal bg-bgGradient h-[2.8rem] w-[9rem] flex items-center justify-center rounded-[0.25rem] relative before:absolute before:left-0 before:-translate-x-40 before:w-full before:h-full before:top-0 before:transition-all before:duration-1000 hover:before:translate-x-40 before:bg-btnHover overflow-hidden before:z-20 z-0 
+}
+
