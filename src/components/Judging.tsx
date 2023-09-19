@@ -1,6 +1,6 @@
 
 import img from "../assets/judge.png";
-import arrow from "../assets/arrow.png";
+
 import colorStar from "../assets/colorStar.png";
 import whiteStar from "../assets/whiteStar.png";
 import Button from "./Button";

@@ -1,9 +1,9 @@
 // import React from 'react'
 import img from '../assets/logo.png'
 import Button from './Button';
-type Props = {}
 
-const Header = (props: Props) => {
+
+const Header = () => {
   return (
        
        <header className=' py-5 border-b border-slate-700 relative'>

@@ -1,5 +1,5 @@
 import img from "../assets/rules.png";
-import arrow from "../assets/arrow.png";
+
 import colorStar from "../assets/colorStar.png";
 import whiteStar from "../assets/whiteStar.png";
 

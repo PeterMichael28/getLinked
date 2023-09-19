@@ -8,7 +8,7 @@ import whiteStar from "../assets/whiteStar.png";
 import graystar from "../assets/greyStar.png";
 import Button from "./Button";
 
-type Props = {};
+
 
 const HeroSection = () => {
  return (

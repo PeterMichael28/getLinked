@@ -1,7 +1,7 @@
 import { BsPlus } from "react-icons/bs";
 import { BiMinus } from "react-icons/bi";
 
-/* eslint-disable react/prop-types */
+
 
 
 type SingleFaq = {
