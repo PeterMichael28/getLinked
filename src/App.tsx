@@ -9,6 +9,7 @@ import Header from './components/Header';
 import HeroSection from './components/HeroSection';
 import Introduction from './components/Introduction';
 import Judging from './components/Judging';
+import LineTest from './components/LineTest';
 import Rules from './components/Rules';
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
     <Rules />
     <Judging />
     <FAQContent />
+    <LineTest />
       </main>
     </>
   )
