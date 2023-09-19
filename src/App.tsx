@@ -6,6 +6,9 @@
 import './App.css'
 import Header from './components/Header';
 import HeroSection from './components/HeroSection';
+import Introduction from './components/Introduction';
+import Judging from './components/Judging';
+import Rules from './components/Rules';
 
 function App() {
 
@@ -16,9 +19,9 @@ function App() {
     <Header />
    
     <HeroSection />
-
-
-  
+    <Introduction />
+    <Rules />
+    <Judging />
       </main>
     </>
   )
