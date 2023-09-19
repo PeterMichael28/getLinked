@@ -4,6 +4,7 @@
 // import img3 from './assets/bg.png'
 
 import './App.css'
+import FAQContent from './components/FAQContent';
 import Header from './components/Header';
 import HeroSection from './components/HeroSection';
 import Introduction from './components/Introduction';
@@ -22,6 +23,7 @@ function App() {
     <Introduction />
     <Rules />
     <Judging />
+    <FAQContent />
       </main>
     </>
   )
