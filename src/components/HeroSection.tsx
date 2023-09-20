@@ -16,7 +16,9 @@ const HeroSection = () => {
 
     const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
-  const handleMouseMove = (e) => {
+
+    // handling the ,ouse movement in this section
+  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
     // console.log(e.clientY )
     setMousePosition({ x: e.clientX, y: e.clientY });
   };
