@@ -1,10 +1,10 @@
-import img from "../assets/partner.png";
-import img2 from "../assets/partner-mobile.png";
+
 
 import img3 from "../assets/price_overlay.png";
 
 import colorStar from "../assets/colorStar.png";
 import whiteStar from "../assets/whiteStar.png";
+import PartnerLogos from "./PartnerLogos";
 
 const Partners = () => {
  return (
@@ -37,8 +37,8 @@ const Partners = () => {
    </div>
 
    {/* logos */}
-   <div className=" -tertiary bg-[rgba(255, 255, 255, 0.01)] rounded-md max-w-[1100px] mx-auto mt-10 max-sm:px-5 px-9">
-    <img
+   <div className=" -tertiary bg-[rgba(255, 255, 255, 0.01)] rounded-md max-w-[1100px] mx-auto mt-10 max-sm:px-8 px-9">
+    {/* <img
      src={img}
      alt=""
      className="w-full h-auto hidden md:block"
@@ -47,7 +47,8 @@ const Partners = () => {
      src={img2}
      alt=""
      className="w-full md:hidden h-auto"
-    />
+    /> */}
+    <PartnerLogos />
    </div>
 
    {/* colored star */}
