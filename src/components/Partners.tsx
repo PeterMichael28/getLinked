@@ -1,6 +1,6 @@
 
 import img from "../assets/partner.png";
-import img2 from "../assets/Rewards.png";
+
 import img3 from "../assets/price_overlay.png";
 
 import colorStar from "../assets/colorStar.png";
