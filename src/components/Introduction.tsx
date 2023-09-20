@@ -4,7 +4,7 @@ import colorStar from "../assets/colorStar.png";
 
 const Introduction = () => {
  return (
-  <section className="-mt-[165px] md:-mt-[85px] relative border-y border-zinc-700 py-10 max-sm:border-t-0">
+  <section className="-mt-[165px] md:-mt-[85px] relative border-y border-zinc-700 py-10 max-sm:border-t-0 w-full overflow-hidden">
    <div className="grid grid-cols-1 md:grid-cols-2 place-items-center place-content-center gap-4 gap-y-7 max-w-[1100px] mx-auto md:mt-7 relative">
     <div className="md:h-[400px] px-12 relative">
      <img
