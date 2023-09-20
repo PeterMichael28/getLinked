@@ -13,7 +13,7 @@ const Partners = () => {
    <div className="w-full md:w-[70rem] md:h-[40rem] h-[70vh] bg-no-repeat bg-contain bg-right bg-bgBlur absolute -left-[10rem] -top-[12rem] md:-top-[3rem] md:-left-[31rem] mix-blend-hard-light md:opacity-[1] blur-xl"></div>
 
    {/* second blur */}
-   <div className="w-full md:w-[70rem] md:h-[40rem] h-[70vh] bg-no-repeat bg-contain bg-right bg-bgBlur absolute left-[10rem] -bottom-[84%] md:top-[24rem] md:left-[37%] mix-blend-hard-light opacity-[1] blur-xl"></div>
+   <div className="w-full md:w-[70rem] md:h-[40rem] h-[70vh] bg-no-repeat bg-contain bg-right bg-bgBlur absolute left-[10rem] -bottom-[84%] md:top-[24rem] md:left-[37%] mix-blend-hard-light opacity-[1] blur-xl max-sm:hidden"></div>
 
    {/* overlay image */}
    <img
