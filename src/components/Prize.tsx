@@ -14,7 +14,7 @@ const Prize = () => {
    <div className="w-full md:w-[70rem] md:h-[40rem] h-[70vh] bg-no-repeat bg-contain bg-right bg-bgBlur absolute -left-[5rem] top-[2rem] md:top-[6rem] md:-left-[16rem] mix-blend-hard-light md:opacity-[1] blur-xl"></div>
 
    {/* second blur */}
-   <div className="w-full md:w-[70rem] md:h-[40rem] h-[70vh] bg-no-repeat bg-contain bg-right bg-bgBlur absolute left-[9rem] -bottom-[25%] md:top-[20rem] md:left-[50%] mix-blend-hard-light opacity-[1] blur-xl"></div>
+   <div className="w-full md:w-[70rem] md:h-[40rem] h-[70vh] bg-no-repeat bg-contain bg-right bg-bgBlur absolute left-[9rem] -bottom-[25%] md:top-[20rem] md:left-[50%] mix-blend-hard-light opacity-[1] blur-xl  max-sm:hidden"></div>
 
    {/* overlay image */}
    <img
