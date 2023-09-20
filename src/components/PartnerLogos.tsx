@@ -9,7 +9,18 @@ import logo6 from "../assets/logo6.png";
 const PartnerLogos = () => {
   return (
       <div className="px-12 md:px-28 md:py-24 py-10 max-w-[1100px] w-full mx-auto border border-tertiary rounded-md">
-          <div className="grid grid-cols-3 place-items-center place-content-center">
+
+{/* #110B22 */}
+          <div className="grid grid-cols-3 place-items-center place-content-center relative">
+            {/* small ball */}
+            <div className="absolute w-10 h-10 rounded-full left-[30.9%] top-[46%] bg-[#110B20] overflow-hidden"/>
+
+             {/* 2 small ball */}
+             <div className="absolute w-10 h-10 rounded-full right-[30.9%] top-[46%] bg-[#110B22] overflow-hidden"/>
+
+
+
+
               <div className="w-full h-full py-2 md:py-5 md:px-20 px-3 flex justify-center items-center border-r border-b border-tertiary">
                   <img src={logo1} alt="" className="w-auto h-auto object-contain"/>
             </div>
