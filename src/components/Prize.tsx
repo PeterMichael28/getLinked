@@ -15,10 +15,10 @@ const Prize = () => {
     <section className=" pt-20 mt-4 md:mt-[1rem] relative borde-b borde-zinc-700 py-2 pb-10 md:pb-24">
 
         {/* first blur */}
-    <div className="w-full md:w-[70rem] md:h-[40rem] h-[70vh] bg-no-repeat bg-contain bg-right bg-bgBlur absolute -left-[5rem] top-[2rem] md:top-[6rem] md:-left-[16rem] mix-blend-hard-light md:opacity-[.8] "></div>
+    <div className="w-full md:w-[70rem] md:h-[40rem] h-[70vh] bg-no-repeat bg-contain bg-right bg-bgBlur absolute -left-[5rem] top-[2rem] md:top-[6rem] md:-left-[16rem] mix-blend-hard-light md:opacity-[1] blur-xl"></div>
 
 {/* second blur */}
-<div className="w-full md:w-[70rem] md:h-[40rem] h-[70vh] bg-no-repeat bg-contain bg-right bg-bgBlur absolute left-[9rem] -bottom-[25%] md:top-[20rem] md:left-[50%] mix-blend-hard-light opacity-[.8] "></div>
+<div className="w-full md:w-[70rem] md:h-[40rem] h-[70vh] bg-no-repeat bg-contain bg-right bg-bgBlur absolute left-[9rem] -bottom-[25%] md:top-[20rem] md:left-[50%] mix-blend-hard-light opacity-[1] blur-xl"></div>
 
 {/* overlay image */}
 <img src={img3} alt="star-icon" className="absolute w-full h-full top-0 left-0 opacity0 mix-blend-color-burn"/>

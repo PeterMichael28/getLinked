@@ -38,7 +38,7 @@ const HeroSection = () => {
     />
 
     {/* first blur */}
-    <div className="w-full md:w-[50rem] md:h-[40rem] h-[70vh] bg-no-repeat bg-cover bg-right bg-bgBlur absolute -left-[4rem] top-0 md:-top-[7rem] md:left-[3rem] mix-blend-hard-light opacity-[.8] "></div>
+    <div className="w-full md:w-[50rem] md:h-[40rem] h-[70vh] bg-no-repeat bg-cover bg-right bg-bgBlur absolute -left-[4rem] top-0 md:-top-[7rem] md:left-[3rem] mix-blend-hard-light opacity-[1] blur-xl"></div>
 
     {/* ignite */}
     <p className="md:text-[2rem] text-[1rem] italic font-bold w-full md:text-right relative text-center">
