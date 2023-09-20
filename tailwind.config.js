@@ -20,7 +20,7 @@ export default {
       btnHover:
         "linear-gradient(140deg, transparent 0%, #00f0ff 50%, transparent 100%)",
       bgUnderlay: 
-        "url('./src/assets/underlay.png')"
+        "url('/underlay.png')"
   },
     },
   },

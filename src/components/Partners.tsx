@@ -1,5 +1,6 @@
 
 import img from "../assets/partner.png";
+import img2 from "../assets/partner-mobile.png";
 
 import img3 from "../assets/price_overlay.png";
 
@@ -9,7 +10,7 @@ import whiteStar from "../assets/whiteStar.png";
 
 const Partners = () => {
   return (
-    <section className="pt-12 md:pt-20 relative borde-b borde-zinc-700 py-2 pb-10 md:pb-24">
+    <section className="pt-12 md:pt-20 relative border-b border-zinc-700 py-2 pb-20 md:pb-24 overflow-hidde">
 
     {/* first blur */}
 <div className="w-full md:w-[70rem] md:h-[40rem] h-[70vh] bg-no-repeat bg-contain bg-right bg-bgBlur absolute -left-[10rem] -top-[12rem] md:-top-[3rem] md:-left-[31rem] mix-blend-hard-light md:opacity-[1] blur-xl"></div>
@@ -36,8 +37,10 @@ const Partners = () => {
 
 
     {/* logos */}
-    <div className=" -tertiary bg-[rgba(255, 255, 255, 0.01)] rounded-md max-w-[1100px] mx-auto mt-10 max-sm:px-9 px-9">
-        <img src={img} alt="" className="w-full h-auto" />
+    <div className=" -tertiary bg-[rgba(255, 255, 255, 0.01)] rounded-md max-w-[1100px] mx-auto mt-10 max-sm:px-5 px-9">
+        <img src={img} alt="" className="w-full h-auto hidden md:block" />
+        <img src={img2} alt="" className="w-full md:hidden h-auto" />
+
     </div>
 
 
@@ -51,7 +54,7 @@ const Partners = () => {
      <img
       src={whiteStar}
       alt="star-icon"
-      className="absolute w-2 md:w-4 md:-right-[10%] right-14 md:-bottom-16 animate-pulse"
+      className="absolute w-2 md:w-4 md:-right-[10%] right-14 md:-bottom-16 animate-pulse "
      />
     </section>
   )

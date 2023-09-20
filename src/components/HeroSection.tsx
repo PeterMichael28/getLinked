@@ -24,10 +24,10 @@ const HeroSection = () => {
   };
 
  return (
-  <section className=" relative  " onMouseMove={handleMouseMove}>
+  <section className=" relative  overflow-hidden " onMouseMove={handleMouseMove}>
 
     {/* cursor */}
-    <div className='w-5 h-5 rounded-full bg-tertiary shadow-sm animate-pulse  absolute z-50'  style={{
+    <div className='w-5 h-5 rounded-full bg-tertiary shadow-sm animate-pulse  absolute z-50 borde'  style={{
           left: `${mousePosition.x}px`,
           top: `${mousePosition.y - 90}px`,
         //   transition: 'left 0.3s ease, top 0.3s ease', // Adjust the duration as needed
