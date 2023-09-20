@@ -3,9 +3,6 @@ import {  useRef } from "react";
 import { motion, useScroll } from "framer-motion";
 
 
-// interface ChildProps {
-//     liRef: RefObject<HTMLLIElement>;
-//   }
 const LiIcon = ({ num }: { num: number }) => {
  return (
   <div className="absolute md:left-1/2 -left-7 max-sm:top-20 -translate-x-1/2 ml-[2px] md:w-[50px] md:h-[50px] rounded-full p-2 max-sm:pb-9 max-sm:mb-10 bg-primary">
@@ -23,7 +20,13 @@ type Details = {
  id: number;
 };
 
-const ExperienceDetails = ({
+type TimelineDetails = {
+    headerText: string;
+    date: string;
+    smallText: string;
+};
+
+const TimelineDetails = ({
     headerText,
     date,
     smallText,
@@ -64,20 +67,25 @@ const ExperienceDetails = ({
  );
 };
 
-const LineTest = () => {
+const Timeline = () => {
  const targetRef = useRef(null);
  const { scrollYProgress } = useScroll({
   target: targetRef,
   offset: ["start end", "center start"],
  });
  return (
-  <div className="my-60 px-8 md:px-0">
-   <h2 className="font-bold text-8xl w-full text-center my-16">
-    Experience
-   </h2>
+  <div className="my-20 px-8 md:px-0 hidden md:block">
+   <h2 className="text-[2.3rem] font-bold text-white leading-none text-center">
+      Timeline
+     </h2>
+     <p className="text-base leading-6 md:max-w-[45%] lg:max-w-[30%] mx-auto text-center text-white mt-3 px-4">
+     Here is the breakdown of the time we
+ anticipate using for the upcoming event.
+     </p>
+
 
    <div
-    className="md:w-[75%] mx-auto relative w-full"
+    className="w-[80%] mx-auto relative mt-20"
     ref={targetRef}
    >
     <motion.div
@@ -85,8 +93,8 @@ const LineTest = () => {
      className="absolute md:left-1/2 left-3 top-0 md:-translate-x-1/2 md:-translate-y-1/2 w-[2px] h-full origin-top bg-tertiary transition-all duration-300"
     />
     <ul className="flex flex-col items-start gap-y-16 justify-between ml-10 md:ml-4 pt-28 ">
-     {timelineData.map((dat, i) => (
-      <ExperienceDetails
+     {timelineData.map((dat: TimelineDetails, i: number) => (
+      <TimelineDetails
        key={i}
        headerText={dat.headerText}
        id={i}
@@ -101,4 +109,4 @@ const LineTest = () => {
  );
 };
 
-export default LineTest;
+export default Timeline;

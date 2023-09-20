@@ -21,15 +21,15 @@ const FAQContent = () => {
     };
   
     return (
-     <section className=" md:mt-7 relative border-b border-zinc-700 py-2 pb-10 ">
+     <section className=" md:mt-7 relative border-b border-zinc-700 py-14 pb-10 ">
 
       <div className="grid grid-cols-1 md:grid-cols-7 place-items-center place-content-center gap-12 gap-y-7 max-w-[1100px] mx-auto relative ">
      
   
 
       <div className="md:text-left text-center flex flex-col md:items-start items-center max-sm:px-10 relative md:pl-9 md:col-span-3">
-              <h2 className="text-[1.1rem] font-bold text-white leading-none md:text-[1.9rem]">Frequently Ask</h2>
-              <h2 className="text-[1.1rem] font-bold text-tertiary leading-none md:text-[1.9rem] mt-2 md:mt-3">Question</h2>
+              <h2 className="text-[1.3rem] font-bold text-white leading-none md:text-[1.9rem]">Frequently Ask</h2>
+              <h2 className="text-[1.3rem] font-bold text-tertiary leading-none md:text-[1.9rem] mt-3 md:mt-3">Question</h2>
               <p className="text-[.75rem] md:text-sm max-sm:leading-6 text-white mt-2 md:mt-6">We got answers to the questions that you might
 want to ask about getlinked Hackathon 1.0</p>
 

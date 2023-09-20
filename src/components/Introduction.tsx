@@ -25,8 +25,8 @@ const Introduction = () => {
         {/* text */}
 
           <div className="md:text-left text-center flex flex-col md:items-start items-center max-sm:mt-7 max-sm:px-10 relative">
-              <h2 className="text-[1.1rem] font-bold text-white leading-none md:text-[1.9rem]">Introduction to getlinked</h2>
-              <h2 className="text-[1.1rem] font-bold text-tertiary leading-none md:text-[1.9rem] mt-2 md:mt-3">tech Hackathon 1.0</h2>
+              <h2 className="text-[1.3rem] font-bold text-white leading-none md:text-[1.9rem]">Introduction to getlinked</h2>
+              <h2 className="text-[1.3rem] font-bold text-tertiary leading-none md:text-[1.9rem] mt-3 md:mt-3">tech Hackathon 1.0</h2>
               <p className="text-[.75rem] md:text-sm max-sm:leading-6 text-white mt-2 md:mt-6">Our tech hackathon is a melting pot of visionaries, and its purpose is as
 clear as day: to shape the future. Whether you're a coding genius, a 
 design maverick, or a concept wizard, you'll have the chance to transform 
