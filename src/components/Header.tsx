@@ -23,7 +23,7 @@ const Header = () => {
 
 
  return (
-  <header className=" py-5 border-b border-slate-700 relative">
+  <header className=" py-5 border-b border-slate-700 relative overflow-hidden">
    <div className="flex items-center justify-between max-w-[1100px] mx-auto max-sm:px-5">
     {/* logo */}
     <img

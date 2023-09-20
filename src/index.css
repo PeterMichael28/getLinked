@@ -4,16 +4,16 @@
 @tailwind utilities;
 
 
+*{
 
+}
 body{
   background: #150E28;
   font-family: 'Montserrat', sans-serif;
   color: white;
-  overflow-x: hidden;
+
 }
-*{
-  overflow-x: hidden;
-}
+
 .font-clash {
   font-family: 'Clash Display', sans-serif;
   /* font-weight: bold; */
