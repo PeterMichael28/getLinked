@@ -9,8 +9,17 @@ type Props = {
 
 const Button = ({text, className}: Props) => {
   return (
-    <button type='button' className={twMerge(`text-white font-[.9rem] font-normal bg-bgGradient h-[2.8rem] w-[9rem] flex items-center justify-center rounded-[0.25rem] relative before:absolute before:left-0 before:-translate-x-40 before:w-full before:h-full before:top-0 before:transition-all before:duration-1000 hover:before:translate-x-40 before:bg-btnHover overflow-hidden before:z-20 z-0, ${className}`)}><span className='relative z-50'>{text}</span> </button>
-  )
+   <div className="group w-fit h-fit p-[1px] bg-bgGradient rounded-[0.25rem] overflow-hidden borde transition-all duration-500">
+    <button
+     type="button"
+     className={twMerge(
+      `text-white font-[.9rem] font-normal h-[2.8rem] w-[9rem] rounded-[0.25rem] transition-all duration-500 flex items-center justify-center  relative before:z-20 z-0 group-hover:bg-primary , ${className}`
+     )}
+    >
+     <span className="relative z-50">{text}</span>{" "}
+    </button>
+   </div>
+  );
 }
 
 export default Button
