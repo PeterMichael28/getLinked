@@ -1,3 +1,5 @@
+
+import {useState} from 'react'
 import img2 from "../assets/hero-img.png";
 import redline from "../assets/red-line.png";
 import fire from "../assets/fire.png";
@@ -11,8 +13,28 @@ import Button from "./Button";
 
 
 const HeroSection = () => {
+
+    const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+
+  const handleMouseMove = (e) => {
+    // console.log(e.clientY )
+    setMousePosition({ x: e.clientX, y: e.clientY });
+  };
+
  return (
-  <section className=" relative  ">
+  <section className=" relative  " onMouseMove={handleMouseMove}>
+
+    {/* cursor */}
+    <div className='w-5 h-5 rounded-full bg-tertiary shadow-sm animate-pulse  absolute z-50'  style={{
+          left: `${mousePosition.x}px`,
+          top: `${mousePosition.y - 90}px`,
+        //   transition: 'left 0.3s ease, top 0.3s ease', // Adjust the duration as needed
+        }}>
+
+    </div>
+
+
+
    {/* bg undrlay */}
    {/* <img src={underlayImg} alt="underlay" className='absolute w-full h-full object-cover'/> */}
    <div className="bg-cover bg-center bg-no-repeat bg-blend-luminosity absolute w-full h-full bg-bgUnderlay opacity-50"></div>
@@ -29,16 +51,16 @@ const HeroSection = () => {
     <img
      src={graystar}
      alt="white star"
-     className="absolute md:left-[55%] left-[83%] top-[70px] md:w-4 z-30 w-[.6rem]"
+     className="absolute md:left-[55%] left-[83%] top-[70px] md:w-4 z-30 w-[.6rem] animate-pulse"
     />
     <img
      src={graystar}
      alt="white star"
-     className="absolute md:left-[46%] left-[75%] md:bottom-[30%] md:w-3 w-2 bottom-[68%] z-30 "
+     className="absolute md:left-[46%] left-[75%] md:bottom-[30%] md:w-3 w-2 bottom-[68%] z-30 animate-pulse"
     />
 
     {/* first blur */}
-    <div className="w-full md:w-[50rem] md:h-[40rem] h-[70vh] bg-no-repeat bg-cover bg-right bg-bgBlur absolute -left-[4rem] top-0 md:-top-[7rem] md:left-[3rem] mix-blend-hard-light opacity-[1] blur-xl"></div>
+    <div className="w-full md:w-[70rem] md:h-[40rem] h-[70vh] bg-no-repeat bg-cover bg-right bg-bgBlur absolute -left-[3rem] top-0 md:-top-[7rem] md:-left-[5rem] mix-blend-hard-light opacity-[1] blur-xl"></div>
 
     {/* ignite */}
     <p className="md:text-[2rem] text-[1rem] italic font-bold w-full md:text-right relative text-center">
@@ -89,7 +111,7 @@ const HeroSection = () => {
         <img
          src={fire}
          alt=""
-         className=" scale-[.5] md:scale-[.8] -ml-8 md:-ml-3"
+         className=" scale-[.5] md:scale-[.8] -ml-8 md:-ml-3 animate-pulse"
         />
        </h1>
       </div>
@@ -102,7 +124,7 @@ const HeroSection = () => {
       <Button text="Register" />
 
       {/* counter */}
-      <div className="md:mt-10 mt-3">
+      <div className="md:mt-10 mt-6 max-sm:mb-5">
        <img
         src={timer}
         alt=""

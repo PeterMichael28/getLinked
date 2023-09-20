@@ -13,6 +13,7 @@ import Timeline from './components/Timeline';
 import MobileTimeline from './components/MobileTimeline';
 import Rules from './components/Rules';
 import Prize from './components/Prize';
+import Partners from './components/Partners';
 
 function App() {
 
@@ -30,6 +31,7 @@ function App() {
     <Timeline />
     <MobileTimeline />
     <Prize />
+    <Partners />
       </main>
     </>
   )

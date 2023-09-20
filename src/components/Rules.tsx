@@ -8,10 +8,10 @@ const Rules = () => {
   <section className=" md:mt-7 relative border-b border-zinc-700 py-2 pb-10 ">
 
     {/* first blur */}
-    <div className="w-full md:w-[70rem] md:h-[40rem] h-[70vh] bg-no-repeat bg-contain bg-right bg-bgBlur absolute -left-[7rem] -top-[8rem] md:-top-[5rem] md:-left-[19rem] mix-blend-hard-light opacity-[1] blur-xl"></div>
+    <div className="w-full md:w-[80rem] md:h-[40rem] h-[70vh] bg-no-repeat bg-contain bg-right bg-bgBlur absolute -left-[7rem] -top-[8rem] md:-top-[7rem] md:-left-[22rem] mix-blend-hard-light opacity-[1] blur-xl"></div>
 
     {/* second blur */}
-    <div className="w-full md:w-[70rem] md:h-[40rem] h-[70vh] bg-no-repeat bg-contain bg-right bg-bgBlur absolute left-[9rem] top-[30%] md:top-[7rem] md:left-[50%] mix-blend-hard-light opacity-[1] blur-2xl"></div>
+    <div className="w-full md:w-[70rem] md:h-[40rem] h-[70vh] bg-no-repeat bg-contain bg-right bg-bgBlur absolute left-[9rem] top-[30%] md:top-[7rem] md:left-[45%] mix-blend-hard-light opacity-[1] blur-2xl"></div>
 
 
 
@@ -48,12 +48,12 @@ const Rules = () => {
      <img
       src={colorStar}
       alt="star-icon"
-      className="absolute w-2 md:w-4 md:left-[50%] right-14 -top-[40%] md:-top-[17%]"
+      className="absolute w-2 md:w-4 md:left-[50%] right-14 -top-[40%] md:-top-[17%] animate-pulse"
      />
      <img
       src={whiteStar}
       alt="star-icon"
-      className="absolute w-2 md:w-4 md:-right-[10%] right-14 md:-bottom-16"
+      className="absolute w-2 md:w-4 md:-right-[10%] right-14 md:-bottom-16 animate-pulse"
      />
     </div>
 
@@ -61,7 +61,7 @@ const Rules = () => {
      <img
       src={img}
       alt="image"
-      className="w-full h-full object-contain"
+      className="w-full h-full object-contain "
      />
      {/* colored star */}
      {/* <img src={colorStar} alt="star-icon" className="absolute w-3 left-12 top-[30%]"/> */}

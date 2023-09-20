@@ -41,8 +41,8 @@ const Prize = () => {
               <div className="md:h-auto max-sm:px-12 relative col-span-2 borde w-full ">
               <img src={img} alt="image" className="w-full h-full object-contain"/>
               {/* colored star */}
-        <img src={colorStar} alt="star-icon" className="absolute w-4 left-[50%] -top-[25%]"/>
-        <img src={whiteStar} alt="star-icon" className="absolute w-2 md:w-3  left-[70%] -bottom-16"/>
+        <img src={colorStar} alt="star-icon" className="absolute w-4 left-[50%] -top-[25%] animate-pulse"/>
+        <img src={whiteStar} alt="star-icon" className="absolute w-2 md:w-3  left-[70%] -bottom-16 animate-pulse"/>
 
 
         
@@ -57,8 +57,8 @@ const Prize = () => {
                
                   <img src={img2} alt="image" className="w-full scale-90  h-full object-contain md:ml-9 borde"/>
                        {/* colored star */}
-        <img src={whiteStar} alt="star-icon" className="absolute w-5 left-20 top-20"/>
-        <img src={whiteStar} alt="star-icon" className="absolute w-2 md:w-3  right-6 top-24"/>
+        <img src={whiteStar} alt="star-icon" className="absolute w-5 left-20 top-20 animate-pulse"/>
+        <img src={whiteStar} alt="star-icon" className="absolute w-2 md:w-3  right-6 top-24 animate-pulse"/>
               </div>
           </div>
     </section>

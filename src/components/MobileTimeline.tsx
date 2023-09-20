@@ -5,8 +5,8 @@ import { motion } from "framer-motion";
 
 const LiIcon = ({ num }: { num: number }) => {
  return (
-  <div className="absolute -left-3 -bottom-1   rounded-full p-2 bg-primary">
-   <div className="w-full h-full bg-bgGradient rounded-full flex items-center justify-center animate-pulse max-sm:w-[35px] max-sm:h-[35px]">
+  <div className="absolute -left- -bottom-1   rounded-full p-1 pt-[6px] bg-primary text-sm">
+   <div className="w-full h-full bg-bgGradient rounded-full flex items-center justify-center animate-pulse max-sm:w-[30px] max-sm:h-[30px]">
     {num + 1}
    </div>
   </div>
@@ -42,7 +42,7 @@ const MobileTimelineDetails = ({
     <div className='flex flex-col min-h-full w-[9%] justify-center items-center borde'>
         <motion.div
     //  style={{ scaleY: scrollYProgress }}
-     className="h-full bg-tertiary transition-all duration-300 w-1"
+     className="h-full bg-tertiary transition-all duration-300 w-[2px]"
     />
    <LiIcon num={id} />
     </div>
