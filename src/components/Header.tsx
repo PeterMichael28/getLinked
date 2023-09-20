@@ -1,9 +1,9 @@
 import {useState} from 'react'
 import img from "../assets/logo.png";
-import open from "../assets/open.png";
+// import open from "../assets/open.png";
 import close from "../assets/close.png";
 import Button from "./Button";
-
+import { RiMenu4Fill } from 'react-icons/ri';
 import { Link } from 'react-router-dom';
 
 const Header = () => {
@@ -46,15 +46,15 @@ const Header = () => {
     </nav>
 
      {/*open mobile hamburger */}
-
-              <img src={open} alt="open-icon"  className='text-white cursor-pointer md:hidden relative' onClick={() => setShowMobile(true)}/>
+     <RiMenu4Fill className='text-white cursor-pointer md:hidden relative' size={32} onClick={() => setShowMobile(true)}/>
+              {/* <img src={open} alt="open-icon"  className='text-white cursor-pointer md:hidden relative' onClick={() => setShowMobile(true)}/> */}
    </div>
 
 
 {/* mobile nav */}
    <div className={`w-full h-[100vh] z-[900] bg-[#150E28] fixed top-0 ${showMobile ? 'right-0' : '-right-full'} transition-all duration-500 px-10`}>
     {/*close mobile hamburger */}
-   <img src={close} alt="open-icon"  className='text-white cursor-pointer md:hidden absolute  top-10 right-9' onClick={() => setShowMobile(false)}/>
+   <img src={close} alt="open-icon"  className='text-white cursor-pointer md:hidden absolute w-auto h-auto  top-10 right-9' onClick={() => setShowMobile(false)}/>
 
 
 
