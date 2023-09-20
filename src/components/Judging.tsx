@@ -20,7 +20,7 @@ const Judging = () => {
     className="absolute w-2 md:w-3  right-10 bottom-16 md:top-[15rem] md:left-[50%] animate-pulse"
    />
 
-   <div className="grid grid-cols-1 md:grid-cols-2 place-items-center place-content-center gap-7 gap-y-7 max-w-[1100px] mx-auto relative ">
+   <div className="grid grid-cols-1 md:grid-cols-2 place-items-center place-content-center gap-7 gap-y-7 max-w-[1100px] mx-auto relative w-full overflow-hidden">
     {/* img */}
     <div className="md:h-auto max-sm:px-12 relative">
      <img

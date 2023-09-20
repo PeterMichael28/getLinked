@@ -24,7 +24,7 @@ const Prize = () => {
    />
 
    {/* text */}
-   <div className="flex flex-col md:items-start md:justify-end items-center max-sm:px-2 relative   borde max-w-[1200px] mx-auto">
+   <div className="flex flex-col md:items-start md:justify-end items-center max-sm:px-2 relative   borde max-w-[1200px] mx-auto w-full overflow-hidden">
     <div className="md:text-left text-center flex flex-col md:items-start md:justify-end items-center max-sm:px-14 relative ml-auto">
      <h2 className="text-[1.3rem] font-bold text-white leading-none md:text-[1.9rem]">
       Prizes and
