@@ -13,7 +13,7 @@ export default {
     },
     backgroundImage: {
       bgBlur:
-          "url('./src/assets/bg-blur.png')",
+          "url('/bg-blur.png')",
   
       bgGradient:
           "linear-gradient(270deg, #903AFF 0%, #FE34B9 100%)",
