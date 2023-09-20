@@ -25,7 +25,7 @@ const HeroSection = () => {
 
  return (
   <section
-   className=" relative  overflow-hidden "
+   className=" relative  overflow-hidde "
    onMouseMove={handleMouseMove}
    id="hero"
   >

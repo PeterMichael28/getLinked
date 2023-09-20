@@ -23,7 +23,7 @@ const Header = () => {
 
 
  return (
-  <header className=" py-5 border-b border-slate-700 relative overflow-hidden">
+  <header className=" py-5 border-b border-slate-700 relative overflow-hidde">
    <div className="flex items-center justify-between max-w-[1100px] mx-auto max-sm:px-5">
     {/* logo */}
     <img
@@ -33,7 +33,7 @@ const Header = () => {
      className="object-contain w-[150px] h-auto"
     />
 
-    <nav className=" gap-x-28 items-center justify-end hidden md:flex">
+    <nav className=" gap-x-28 items-center justify-end hidden md:flex relative z-[100]">
      <ul className="flex gap-9 items-center">
       <li className="navLinks"><Link to='#timeline'>Timeline</Link> </li>
       <li className="navLinks">Overview</li>

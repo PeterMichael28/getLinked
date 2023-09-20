@@ -9,7 +9,7 @@ import whiteStar from "../assets/whiteStar.png";
 
 const Prize = () => {
  return (
-  <section className=" pt-20 mt-4 md:mt-[1rem] relative  border-b border-zinc-700 py-2 pb-10 md:pb-24 w-full overflow-hidden">
+  <section className=" pt-20 mt-4 md:mt-[1rem] relative  border-b border-zinc-700 py-2 pb-10 md:pb-24 w-full overflow-hidde">
    {/* first blur */}
    <div className="w-full md:w-[70rem] md:h-[40rem] h-[70vh] bg-no-repeat bg-contain bg-right bg-bgBlur absolute -left-[5rem] top-[2rem] md:top-[6rem] md:-left-[16rem] mix-blend-hard-light md:opacity-[1] blur-xl"></div>
 
