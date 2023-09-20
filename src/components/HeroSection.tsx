@@ -1,5 +1,4 @@
-
-import {useState} from 'react'
+import { useState } from "react";
 import img2 from "../assets/hero-img.png";
 import redline from "../assets/red-line.png";
 import fire from "../assets/fire.png";
@@ -10,35 +9,37 @@ import whiteStar from "../assets/whiteStar.png";
 import graystar from "../assets/greyStar.png";
 import Button from "./Button";
 
-
-
 const HeroSection = () => {
+ const [mousePosition, setMousePosition] = useState({
+  x: 0,
+  y: 0,
+ });
 
-    const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
-
-
-    // handling the ,ouse movement in this section
-  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
-    // console.log(e.clientY )
-    setMousePosition({ x: e.clientX, y: e.clientY });
-  };
+ // handling the ,ouse movement in this section
+ const handleMouseMove = (
+  e: React.MouseEvent<HTMLDivElement>
+ ) => {
+  // console.log(e.clientY )
+  setMousePosition({ x: e.clientX, y: e.clientY });
+ };
 
  return (
-  <section className=" relative  overflow-hidden " onMouseMove={handleMouseMove}>
-
-    {/* cursor */}
-    <div className='w-5 h-5 rounded-full bg-tertiary shadow-sm animate-pulse  absolute z-50 borde'  style={{
-          left: `${mousePosition.x}px`,
-          top: `${mousePosition.y - 90}px`,
-        //   transition: 'left 0.3s ease, top 0.3s ease', // Adjust the duration as needed
-        }}>
-
-    </div>
-
-
+  <section
+   className=" relative  overflow-hidden "
+   onMouseMove={handleMouseMove}
+  >
+   {/* cursor */}
+   <div
+    className="w-5 h-5 rounded-full bg-tertiary shadow-sm animate-pulse  absolute z-50 borde"
+    style={{
+     left: `${mousePosition.x}px`,
+     top: `${mousePosition.y - 90}px`,
+     //   transition: 'left 0.3s ease, top 0.3s ease', // Adjust the duration as needed
+    }}
+   ></div>
 
    {/* bg undrlay */}
-   {/* <img src={underlayImg} alt="underlay" className='absolute w-full h-full object-cover'/> */}
+
    <div className="bg-cover bg-center bg-no-repeat bg-blend-luminosity absolute w-full h-full bg-bgUnderlay opacity-50"></div>
 
    <div className="w-full max-w-[1100px] mx-auto relative py-5 ">
