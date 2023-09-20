@@ -27,6 +27,7 @@ const HeroSection = () => {
   <section
    className=" relative  overflow-hidden "
    onMouseMove={handleMouseMove}
+   id="hero"
   >
    {/* cursor */}
    <div

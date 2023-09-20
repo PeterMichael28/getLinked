@@ -74,7 +74,7 @@ const Timeline = () => {
   offset: ["start end", "center start"],
  });
  return (
-  <div className="my-20 px-8 md:px-0 hidden md:block">
+  <section className="my-20 px-8 md:px-0 hidden md:block"  id="timeline">
    <h2 className="text-[2.3rem] font-bold text-white leading-none text-center">
       Timeline
      </h2>
@@ -105,7 +105,7 @@ const Timeline = () => {
      ))}
     </ul>
    </div>
-  </div>
+  </section>
  );
 };
 

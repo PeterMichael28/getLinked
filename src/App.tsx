@@ -1,8 +1,6 @@
 
 
-
-// import img3 from './assets/bg.png'
-
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css'
 import HomePage from './pages/HomePage';
 
@@ -10,12 +8,19 @@ import HomePage from './pages/HomePage';
 function App() {
 
   return (
-    <>
-      <main className=''>
+    <main className={``}>
+   
+<BrowserRouter>
+      <Routes>
+        <Route path='/' element={<HomePage /> } /> 
+        {/* <Route path='/features' element={<FeaturesPage /> } />  */}
+  
+      </Routes>
+      
 
-    <HomePage />
-      </main>
-    </>
+</BrowserRouter>
+
+</main>
   )
 }
 

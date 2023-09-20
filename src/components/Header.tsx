@@ -3,8 +3,7 @@ import img from "../assets/logo.png";
 import open from "../assets/open.png";
 import close from "../assets/close.png";
 import Button from "./Button";
-import { AiOutlineClose } from 'react-icons/ai';
-import { FiMenu } from 'react-icons/fi';
+
 import { Link } from 'react-router-dom';
 
 const Header = () => {
@@ -12,15 +11,15 @@ const Header = () => {
 
   const [showMobile, setShowMobile] = useState<boolean>(false)
 
-  const [scrolling, setScrolling] = useState<boolean>(false);
+  // const [scrolling, setScrolling] = useState<boolean>(false);
   
-  const handleScroll = () => {
-    if (window.scrollY > 100) {
-      setScrolling(true);
-    } else {
-      setScrolling(false);
-    }
-    };
+  // const handleScroll = () => {
+  //   if (window.scrollY > 100) {
+  //     setScrolling(true);
+  //   } else {
+  //     setScrolling(false);
+  //   }
+  //   };
 
 
  return (
@@ -36,9 +35,9 @@ const Header = () => {
 
     <nav className=" gap-x-28 items-center justify-end hidden md:flex">
      <ul className="flex gap-9 items-center">
-      <li className="navLinks">Timeline</li>
+      <li className="navLinks"><Link to='#timeline'>Timeline</Link> </li>
       <li className="navLinks">Overview</li>
-      <li className="navLinks">FAQs</li>
+      <li className="navLinks"><Link to='/'>FAQs</Link> </li>
       <li className="navLinks">Contact</li>
      </ul>
 
