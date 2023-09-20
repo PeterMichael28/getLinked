@@ -1,6 +1,6 @@
 import { timelineData } from "../static/faqData";
 import {  useRef } from "react";
-import { motion, useScroll } from "framer-motion";
+import { motion } from "framer-motion";
 
 
 const LiIcon = ({ num }: { num: number }) => {
