@@ -59,7 +59,7 @@ const MobileTimelineDetails = ({
                  { headerText }
     </h3>
 
-    <span className="capitalize font-medium text-sm ">
+    <span className="capitalize font-normal text-[.8rem] ">
      {smallText}
     </span>
 
@@ -70,7 +70,7 @@ const MobileTimelineDetails = ({
              initial={{ y: 50 }}
     whileInView={{ y: 0 }}
     transition={{ duration: 0.5, type: "spring" }}
-             className="capitalize font-semibold text-base text-tertiary w-full"
+             className="capitalize font-medium text-[.9rem] text-tertiary w-full"
          >{ date }</motion.div>
     </div>
   </li>
