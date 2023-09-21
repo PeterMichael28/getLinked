@@ -1,14 +1,10 @@
-
 import img from "../assets/register2.png";
 import img2 from "../assets/walk.png";
 import colorStar from "../assets/colorStar.png";
 import whiteStar from "../assets/whiteStar.png";
 import RegisterForm from "./RegistrationForm";
 
-
-
 const RegisterSection = () => {
-
  return (
   <section className="overflow-hidden ">
    <div className="max-w-[1100px] mx-auto grid grid-cols-1 md:grid-cols-5 place-items-star max-sm:pt-1 max-sm:pb-5 md:pt-28 md:pb-24 bordr sm:px-6 md:px-6 relative over h-fit borde">

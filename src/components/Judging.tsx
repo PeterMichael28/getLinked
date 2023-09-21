@@ -23,12 +23,13 @@ const Judging = () => {
 
    <div className="grid grid-cols-1 md:grid-cols-2 place-items-center place-content-center gap-7 gap-y-7 max-w-[1100px] mx-auto relative w-full overflow-hidden">
     {/* img */}
-    <motion.div 
-    initial={{ x: -100, opacity: 0 }}
-    whileInView={{ x: 0, opacity: 1 }}
-    transition={{ duration: 1.5 }}
-    viewport={{ once: true }}
-    className="md:h-auto max-sm:px-12 relative">
+    <motion.div
+     initial={{ x: -100, opacity: 0 }}
+     whileInView={{ x: 0, opacity: 1 }}
+     transition={{ duration: 1.5 }}
+     viewport={{ once: true }}
+     className="md:h-auto max-sm:px-12 relative"
+    >
      <img
       src={img}
       alt="image"
@@ -49,11 +50,12 @@ const Judging = () => {
 
     {/* text */}
     <motion.div
-    initial={{ x: 100, opacity: 0 }}
-    whileInView={{ x: 0, opacity: 1 }}
-    transition={{ duration: 1.5 }}
-    viewport={{ once: true }}
-     className="md:text-left text-center flex flex-col md:items-start items-center max-sm:px-14 relative">
+     initial={{ x: 100, opacity: 0 }}
+     whileInView={{ x: 0, opacity: 1 }}
+     transition={{ duration: 1.5 }}
+     viewport={{ once: true }}
+     className="md:text-left text-center flex flex-col md:items-start items-center max-sm:px-14 relative"
+    >
      <h2 className="text-[1.3rem] font-bold text-white leading-none md:text-[1.9rem]">
       Judging Criteria
      </h2>

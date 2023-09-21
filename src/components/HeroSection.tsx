@@ -11,7 +11,6 @@ import Button from "./Button";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 
-
 const HeroSection = () => {
  const [mousePosition, setMousePosition] = useState({
   x: 0,
@@ -143,12 +142,13 @@ const HeroSection = () => {
        </motion.h1>
       </div>
 
-      <motion.p 
-      initial={{ y: -50, opacity: 0 }}
-      whileInView={{ y: 0, opacity: 1 }}
-      transition={{ duration: 1, delay: 3 }}
-      viewport={{ once: true }}
-      className="md:text-[1.1rem] text-white md:w-[88%] mb-7 max-sm:text-center max-sm:-mt-3 max-sm:px-5">
+      <motion.p
+       initial={{ y: -50, opacity: 0 }}
+       whileInView={{ y: 0, opacity: 1 }}
+       transition={{ duration: 1, delay: 3 }}
+       viewport={{ once: true }}
+       className="md:text-[1.1rem] text-white md:w-[88%] mb-7 max-sm:text-center max-sm:-mt-3 max-sm:px-5"
+      >
        Participate in getlinked tech Hackathon 2023 stand a
        chance to win a Big prize
       </motion.p>

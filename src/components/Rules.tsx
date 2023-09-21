@@ -14,12 +14,13 @@ const Rules = () => {
    <div className="w-full md:w-[70rem] md:h-[40rem] h-[70vh] bg-no-repeat bg-contain bg-right bg-bgBlur absolute left-[9rem] top-[30%] md:top-[7rem] md:left-[38%] mix-blend-hard-light opacity-[1] blur-2xl  max-sm:hidde"></div>
 
    <div className="grid grid-cols-1 md:grid-cols-2 place-items-center place-content-center gap-7 gap-y-7 max-w-[1100px] mx-auto relative ">
-       <motion.div
-       initial={{ x: 100, opacity: 0 }}
-       whileInView={{ x: 0, opacity: 1 }}
-       transition={{ duration: 1.5 }}
-       viewport={{ once: true }}
-         className="px-4 relative md:hidden">
+    <motion.div
+     initial={{ x: 100, opacity: 0 }}
+     whileInView={{ x: 0, opacity: 1 }}
+     transition={{ duration: 1.5 }}
+     viewport={{ once: true }}
+     className="px-4 relative md:hidden"
+    >
      <img
       src={img}
       alt="image"
@@ -29,12 +30,13 @@ const Rules = () => {
 
     {/* text */}
 
-       <motion.div
-       initial={{ x: -100, opacity: 0 }}
-       whileInView={{ x: 0, opacity: 1 }}
-       transition={{ duration: 1.5 }}
-       viewport={{ once: true }}
-         className="md:text-left text-center flex flex-col md:items-start items-center max-sm:mt-0 max-sm:px-10 relative md:ml-16">
+    <motion.div
+     initial={{ x: -100, opacity: 0 }}
+     whileInView={{ x: 0, opacity: 1 }}
+     transition={{ duration: 1.5 }}
+     viewport={{ once: true }}
+     className="md:text-left text-center flex flex-col md:items-start items-center max-sm:mt-0 max-sm:px-10 relative md:ml-16"
+    >
      <h2 className="text-[1.3rem] font-bold text-white leading-none md:text-[1.9rem]">
       Rules and
      </h2>
@@ -65,12 +67,13 @@ const Rules = () => {
      />
     </motion.div>
 
-       <motion.div
-       initial={{ x: 100, opacity: 0 }}
-       whileInView={{ x: 0, opacity: 1 }}
-       transition={{ duration: 1.5 }}
-       viewport={{ once: true }}
-         className="relative hidden md:block">
+    <motion.div
+     initial={{ x: 100, opacity: 0 }}
+     whileInView={{ x: 0, opacity: 1 }}
+     transition={{ duration: 1.5 }}
+     viewport={{ once: true }}
+     className="relative hidden md:block"
+    >
      <img
       src={img}
       alt="image"

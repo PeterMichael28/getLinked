@@ -1,5 +1,3 @@
-
-
 import img3 from "../assets/price_overlay.png";
 
 import colorStar from "../assets/colorStar.png";

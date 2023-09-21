@@ -6,36 +6,31 @@ import ContactForm from "./ContactForm";
 import colorStar from "../assets/colorStar.png";
 import whiteStar from "../assets/whiteStar.png";
 
-
-
-
 const ContactHero = () => {
-
  return (
   <section className="overflow-hidden ">
    <div className="max-w-[1100px] mx-auto grid grid-cols-1 md:grid-cols-5 place-items-star max-sm:pt-1 max-sm:pb-5 md:pt-28 md:pb-24 bordr sm:px-6 md:px-16 relative over h-fit">
-
     {/* colored star */}
     <img
-      src={colorStar}
-      alt="star-icon"
-      className="absolute w-3 left-12 top-[10%]"
-     />
-      <img
-      src={colorStar}
-      alt="star-icon"
-      className="absolute w-5 left-[40%] bottom-[20%]"
-     />
+     src={colorStar}
+     alt="star-icon"
+     className="absolute w-3 left-12 top-[10%]"
+    />
     <img
-      src={whiteStar}
-      alt="star-icon"
-      className="absolute w-4 right-9 top-16"
-             />
-             <img
-      src={whiteStar}
-      alt="star-icon"
-      className="absolute w-5 right-12 bottom-10"
-     />
+     src={colorStar}
+     alt="star-icon"
+     className="absolute w-5 left-[40%] bottom-[20%]"
+    />
+    <img
+     src={whiteStar}
+     alt="star-icon"
+     className="absolute w-4 right-9 top-16"
+    />
+    <img
+     src={whiteStar}
+     alt="star-icon"
+     className="absolute w-5 right-12 bottom-10"
+    />
 
     {/* first blur */}
     <div className="w-[40rem] md:w-[80rem] md:h-[40rem] h-[70vh] bg-no-repeat bg-contain bg-right bg-bgBlur absolute -left-[16rem] -top-[2rem] md:-top-[3rem] md:-left-[79%] mix-blend-hard-light opacity-[1] blur-xl"></div>
@@ -79,9 +74,7 @@ const ContactHero = () => {
     </div>
 
     {/* contact from */}
-    <ContactForm
-     
-    />
+    <ContactForm />
    </div>
   </section>
  );

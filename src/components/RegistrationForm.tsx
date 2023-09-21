@@ -6,7 +6,6 @@ import img from "../assets/congratulation.png";
 import { BiChevronDown } from "react-icons/bi";
 import axios from "axios";
 
-
 function RegisterForm() {
  const [team_name, setTeam_name] = useState("");
  const [email, setEmail] = useState("");
@@ -25,17 +24,17 @@ function RegisterForm() {
  // fetch categories
  useEffect(() => {
   // Function to fetch categories
- 
 
   const fetchCategories = async () => {
-    try {
-      const response = await axios.get(`${backendurl}/categories-list`); // Replace with your API endpoint
-      setFetchedCategories(response.data);
-    } catch (error) {
-      console.error('Error fetching categories:', error);
-    }
+   try {
+    const response = await axios.get(
+     `${backendurl}/categories-list`
+    ); // Replace with your API endpoint
+    setFetchedCategories(response.data);
+   } catch (error) {
+    console.error("Error fetching categories:", error);
+   }
   };
-
 
   // Call the fetchCategories function when the component mounts
   fetchCategories();
@@ -50,43 +49,42 @@ function RegisterForm() {
   return () => clearTimeout(clearError);
  }, [error]);
 
-
  const handleSubmit = async (e: {
   preventDefault: () => void;
  }) => {
   e.preventDefault();
   setLoading(true);
-  
-    try {
-      const response = await axios.post(`${backendurl}/registration`, ({
-        team_name,
-        email,
-        phone_number: phone,
-        group_size: +group_size,
-        project_topic,
-        category,
-        privacy_poclicy_accepted: privacy,
-       }))
-      console.log('Data sent successfully:', response.data);
-      setLoading(false);
-      setOpenModal(true);
-      // Clear the form after successful submission
-       // clear form field
-    setTeam_name("");
-    setEmail("");
-    setPhone("");
-    setGroup_size("");
-    setProject_topic("");
-    setPrivacy(false);
-        setCategory( "" );
-        
-    } catch (error) {
-        setLoading(false);
-        setError(true);
-      console.error('Error submitting data:', error);
+
+  try {
+   const response = await axios.post(
+    `${backendurl}/registration`,
+    {
+     team_name,
+     email,
+     phone_number: phone,
+     group_size: +group_size,
+     project_topic,
+     category,
+     privacy_poclicy_accepted: privacy,
     }
-
-
+   );
+   console.log("Data sent successfully:", response.data);
+   setLoading(false);
+   setOpenModal(true);
+   // Clear the form after successful submission
+   // clear form field
+   setTeam_name("");
+   setEmail("");
+   setPhone("");
+   setGroup_size("");
+   setProject_topic("");
+   setPrivacy(false);
+   setCategory("");
+  } catch (error) {
+   setLoading(false);
+   setError(true);
+   console.error("Error submitting data:", error);
+  }
  };
 
  return (
@@ -169,7 +167,7 @@ function RegisterForm() {
 
     <div className="grid grid-cols-1 md:grid-cols-2 gap-5 w-full">
      <div className="borde relative">
-        <BiChevronDown className='absolute right-2 top-[54%] text-white text-xl'/>
+      <BiChevronDown className="absolute right-2 top-[54%] text-white text-xl" />
       <label
        htmlFor="category"
        className="text-[.8rem] text-white "
@@ -179,13 +177,11 @@ function RegisterForm() {
       <select
        name="category"
        id="category"
-        required
+       required
        value={category}
        onChange={(e) => setCategory(e.target.value)}
        className="rounded-[0.25rem] border border-white bg-[rgba(255,255,255,0.03)] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25] placeholder:text-white placeholder:text-[.8rem] px-4 py-3 w-full outline-none text-[.75rem] mt-1 appearance-none relative"
-
       >
-        
        <option value="" className="text-white bg-primary">
         Select your category
        </option>
@@ -203,7 +199,7 @@ function RegisterForm() {
       </select>
      </div>
      <div className="relative">
-     <BiChevronDown className='absolute right-2 top-[54%] text-white text-xl'/>
+      <BiChevronDown className="absolute right-2 top-[54%] text-white text-xl" />
       <label
        htmlFor="grpsize"
        className="text-[.8rem] text-white "
@@ -215,7 +211,7 @@ function RegisterForm() {
        id="grpsize"
        value={group_size}
        onChange={(e) => setGroup_size(e.target.value)}
-        required
+       required
        className="rounded-[0.25rem] border border-white bg-[rgba(255,255,255,0.03)] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25] placeholder:text-white placeholder:text-[.8rem] px-4 py-3 w-full outline-none text-[.75rem] mt-1 appearance-none"
       >
        <option value="" className="text-white bg-primary">
@@ -278,7 +274,7 @@ function RegisterForm() {
       className={`text-white font-[.9rem] font-normal h-[2.9rem] w-full rounded-[0.25rem] transition-all duration-500 flex items-center justify-center  relative before:z-20 z-0 group-hover:bg-primary `} //  onClick={handleClick}
      >
       <span className="relative z-50">
-      {loading ? "Registering..." : "Register"}{" "}
+       {loading ? "Registering..." : "Register"}{" "}
       </span>{" "}
      </button>
     </div>
@@ -286,7 +282,6 @@ function RegisterForm() {
 
    <Modal
     active={openModal}
-
     children={
      <div className="flex justify-center items-center text-center flex-col text-white gap-y-3">
       <img

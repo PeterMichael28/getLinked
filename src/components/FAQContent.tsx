@@ -20,7 +20,10 @@ const FAQContent = () => {
  };
 
  return (
-  <section className=" md:mt-7 relative border-b border-zinc-700 py-14 pb-10 w-full overflow-hidde"  id="faq">
+  <section
+   className=" md:mt-7 relative border-b border-zinc-700 py-14 pb-10 w-full overflow-hidde"
+   id="faq"
+  >
    <div className="grid grid-cols-1 md:grid-cols-7 place-items-center place-content-center gap-12 gap-y-7 max-w-[1100px] mx-auto relative ">
     <div className="md:text-left text-center flex flex-col md:items-start items-center max-sm:px-10 relative md:pl-9 md:col-span-3">
      <h2 className="text-[1.3rem] font-bold text-white leading-none md:text-[1.9rem]">

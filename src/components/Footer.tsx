@@ -64,26 +64,16 @@ const Footer = () => {
       </p>
       <ul className="flex flex-col items-start gap-y-3">
        <li className="text-[.7rem] text-white hover:scale-110 hover:bg-bgGradient hover:bg-clip-text hover:text-transparent cursor-pointer transition-all duration-300">
-       <Link to='/register'>
-          
-        Overview
-            </Link>
+        <Link to="/register">Overview</Link>
        </li>
        <li className="text-[.7rem] text-white hover:scale-110 hover:bg-bgGradient hover:bg-clip-text hover:text-transparent cursor-pointer transition-all duration-300">
-       <Link to='/register'>
-        Timeline
-            </Link>
+        <Link to="/register">Timeline</Link>
        </li>
        <li className="text-[.7rem] text-white hover:scale-110 hover:bg-bgGradient hover:bg-clip-text hover:text-transparent cursor-pointer transition-all duration-300">
-       <Link to='/register'>
-        FAQ
-            </Link>
+        <Link to="/register">FAQ</Link>
        </li>
        <li className="text-[.7rem] text-white hover:scale-110 hover:bg-bgGradient hover:bg-clip-text hover:text-transparent cursor-pointer transition-all duration-300">
-        <Link to='/register'>
-            
-        Register
-        </Link>
+        <Link to="/register">Register</Link>
        </li>
        <li className="flex justify-center items-center gap-x-4">
         <span className="text-[.9rem] text-tertiary">

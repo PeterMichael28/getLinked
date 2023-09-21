@@ -11,7 +11,7 @@ const Header = () => {
  const [showMobile, setShowMobile] =
   useState<boolean>(false);
 
-  const navigate = useNavigate()
+ const navigate = useNavigate();
  return (
   <header className=" py-5 border-b border-slate-700 relative overflow-hidde">
    <div className="flex items-center justify-between max-w-[1100px] mx-auto max-sm:px-8">
@@ -41,7 +41,10 @@ const Header = () => {
       </li>
      </ul>
 
-     <Button text="Register" handleClick={() => navigate('/register')}/>
+     <Button
+      text="Register"
+      handleClick={() => navigate("/register")}
+     />
     </nav>
 
     {/*open mobile hamburger */}
