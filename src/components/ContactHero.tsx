@@ -2,7 +2,6 @@ import { AiOutlineInstagram } from "react-icons/ai";
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import { RiTwitterXFill } from "react-icons/ri";
 
-import { useState } from "react";
 import ContactForm from "./ContactForm";
 import colorStar from "../assets/colorStar.png";
 import whiteStar from "../assets/whiteStar.png";

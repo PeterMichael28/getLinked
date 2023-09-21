@@ -3,11 +3,10 @@
 
 type ModalProps = {
   active: boolean;
-  setActive?: ( data: boolean ) => void;
   children: React.ReactNode
 }
 
-const Modal = ({active, setActive, children}: ModalProps) => {
+const Modal = ({active, children}: ModalProps) => {
 
 
  return (

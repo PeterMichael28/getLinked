@@ -6,10 +6,10 @@ type Props = {
     text: string;
   className?: string;
   handleClick?: () => void;
-  type?: string
+  
 }
 
-const Button = ({text, className, handleClick, type}: Props) => {
+const Button = ({text, className, handleClick}: Props) => {
   return (
    <div className="group w-fit h-fit p-[1px] bg-bgGradient rounded-[0.25rem] overflow-hidden borde transition-all duration-500">
     <button
