@@ -8,6 +8,7 @@ import timer from "../assets/countdown.png";
 import whiteStar from "../assets/whiteStar.png";
 import graystar from "../assets/greyStar.png";
 import Button from "./Button";
+import { useNavigate } from "react-router-dom";
 
 const HeroSection = () => {
  const [mousePosition, setMousePosition] = useState({
@@ -22,6 +23,8 @@ const HeroSection = () => {
   // console.log(e.clientY )
   setMousePosition({ x: e.clientX, y: e.clientY });
  };
+
+ const navigate = useNavigate()
 
  return (
   <section
@@ -125,7 +128,7 @@ const HeroSection = () => {
        chance to win a Big prize
       </p>
 
-      <Button text="Register" />
+      <Button text="Register" handleClick={() => navigate('/register')}/>
 
       {/* counter */}
       <div className="md:mt-10 mt-6 max-sm:mb-5">

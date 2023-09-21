@@ -32,3 +32,64 @@ body{
   @apply text-white font-[.9rem] font-normal bg-bgGradient h-[2.8rem] w-[9rem] flex items-center justify-center rounded-[0.25rem] relative before:absolute before:left-0 before:-translate-x-40 before:w-full before:h-full before:top-0 before:transition-all before:duration-1000 hover:before:translate-x-40 before:bg-btnHover overflow-hidden before:z-20 z-0 
 }
 
+
+
+
+
+/* custom checkbox container*/
+.check {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  padding-left: 20px;
+
+}
+
+
+/* creating a custom checkbox */
+.check-span {
+position: absolute;
+top: 2px;
+left: 0;
+height: 12px;
+width: 12px;
+/* background-color: red; */
+border: 1px solid white;
+border-radius: 2px;
+}
+
+
+
+/* styling base on if the input is active or checked */
+.check input:active ~ .check-span,
+.check input:checked ~ .check-span {
+  border: none;
+  background-color: #D434FE;
+}
+
+
+
+/* check mark to be shown */
+.check-span::after {
+  content: '';
+  position: absolute;
+  display: none;
+}
+
+.check input:checked ~ .check-span::after {
+  display: block;
+}
+
+
+/* styling the check mark */
+.check-span::after {
+  left: 3px;
+  bottom: 4px;
+  width: 5px;
+  height: 8px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+ transform: rotate(45deg);
+}

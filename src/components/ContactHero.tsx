@@ -1,24 +1,55 @@
 import { AiOutlineInstagram } from "react-icons/ai";
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import { RiTwitterXFill } from "react-icons/ri";
-import Input from './Input'
-import {useState} from 'react'
-import Button from "./Button";
+
+import { useState } from "react";
+import ContactForm from "./ContactForm";
+import colorStar from "../assets/colorStar.png";
+import whiteStar from "../assets/whiteStar.png";
+
+
 
 
 const ContactHero = () => {
-    const [name, setName] = useState('')
-  return (
-      <section>
-          <div className="max-w-[1100px] mx-auto grid grid-cols-1 md:grid-cols-5 place-items-star max-sm:pt-12 max-sm:pb-5 md:py-28 bordr px-6 md:px-16">
-              
+ const [name, setName] = useState("");
+ return (
+  <section className="overflow-hidden ">
+   <div className="max-w-[1100px] mx-auto grid grid-cols-1 md:grid-cols-5 place-items-star max-sm:pt-1 max-sm:pb-5 md:pt-28 md:pb-24 bordr sm:px-6 md:px-16 relative over h-fit">
 
-              <div className="hidden md:flex justify-start items-start flex-col col-span-2">
-              <h2 className="text-[1.3rem] font-bold text-tertiary leading-none md:text-[1.9rem] mt-3 md:mt-3">
+    {/* colored star */}
+    <img
+      src={colorStar}
+      alt="star-icon"
+      className="absolute w-3 left-12 top-[10%]"
+     />
+      <img
+      src={colorStar}
+      alt="star-icon"
+      className="absolute w-5 left-[40%] bottom-[20%]"
+     />
+    <img
+      src={whiteStar}
+      alt="star-icon"
+      className="absolute w-4 right-9 top-16"
+             />
+             <img
+      src={whiteStar}
+      alt="star-icon"
+      className="absolute w-5 right-12 bottom-10"
+     />
+
+    {/* first blur */}
+    <div className="w-[40rem] md:w-[80rem] md:h-[40rem] h-[70vh] bg-no-repeat bg-contain bg-right bg-bgBlur absolute -left-[16rem] -top-[2rem] md:-top-[3rem] md:-left-[79%] mix-blend-hard-light opacity-[1] blur-xl"></div>
+
+    {/* second blur */}
+    <div className="w-full md:w-[80rem] md:h-[40rem] h-[70vh] bg-no-repeat bg-contain bg-right bg-bgBlur absolute left-[9rem] -bottom-[20%] md:top-[17rem] md:left-[15%] mix-blend-hard-light opacity-[1] blur-xl max-sm:hidden"></div>
+
+    <div className="hidden md:flex justify-start items-start flex-col col-span-2">
+     <h2 className="text-[1.3rem] font-bold text-tertiary leading-none md:text-[1.9rem] mt-3 md:mt-3">
       Get in touch
-                  </h2>
-                  
-                  <p className="text-[.75rem] md:text-sm max-sm:leading-6 text-white mt-3 md:mt-6">
+     </h2>
+
+     <p className="text-[.75rem] md:text-sm max-sm:leading-6 text-white mt-3 md:mt-6">
       Contact <br /> Information
      </p>
 
@@ -36,64 +67,26 @@ const ContactHero = () => {
      </p>
 
      <p className="flex justify-start items-start gap-y-2 flex-col mt-4">
-        <span className="text-[.9rem] text-tertiary">
-         Share on
-        </span>
-        <div className="text-white text-[1rem] flex justify-center items-center gap-x-3">
-         <AiOutlineInstagram className="hover:scale-125 transition-all duration-300 cursor-pointer" />
-         <RiTwitterXFill className="hover:scale-125 transition-all duration-300 cursor-pointer" />
-         <FaFacebookF className="hover:scale-125 transition-all duration-300 cursor-pointer" />
-         <FaLinkedinIn className="hover:scale-125 transition-all duration-300 cursor-pointer" />
-        </div>
-       </p>
-              </div>
-
-
-              {/* contact from */}
-              <div className="md:bg-[rgba(255,255,255,0.03)] rounded-xl md:shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] px-14 py-8 col-span-3 md:ml-16">
-                  
-              <h2 className="text-[1.5rem] font-bold text-tertiary leading-non md:text-[1.5rem] mt-3 md:mt-3 leading-8 md:mb-8">
-      Questions or need assistance? <br /> Let us know about it!
-                  </h2>
-
-                  <p className="text-[.75rem] md:text-sm max-sm:leading-6 text-white my-6 md:hidden">
-                  Email us below to any question related 
-to our event
+      <span className="text-[.9rem] text-tertiary">
+       Share on
+      </span>
+      <div className="text-white text-[1rem] flex justify-center items-center gap-x-3">
+       <AiOutlineInstagram className="hover:scale-125 transition-all duration-300 cursor-pointer" />
+       <RiTwitterXFill className="hover:scale-125 transition-all duration-300 cursor-pointer" />
+       <FaFacebookF className="hover:scale-125 transition-all duration-300 cursor-pointer" />
+       <FaLinkedinIn className="hover:scale-125 transition-all duration-300 cursor-pointer" />
+      </div>
      </p>
+    </div>
 
-                  <form className='w-full flex flex-col gap-y-6 items-center justify-start'>
-                  <Input value={name} setValue={setName} name='teamname' placeholder="Team's Name" classNames='md:hidden'/>
-                  <Input value={name} setValue={setName} name='topic' placeholder="Topic" classNames='md:hidden'/>
+    {/* contact from */}
+    <ContactForm
+     name={name}
+     setName={setName}
+    />
+   </div>
+  </section>
+ );
+};
 
-
-
-                    <Input value={name} setValue={setName} name='name' placeholder='First Name' classNames='max-sm:hidden'/>
-
-                    <Input value={name} setValue={setName} name='email' placeholder='Email' type='email' />
-
-                    <Input value={name} setValue={setName} name='message' placeholder='Message' textarea={true}/>
-
-                    <Button text='Submit' />
-
-                {/* share on */}
-                <p className="flex justify-start items-center gap-y-2 flex-col mt-2 md:hidden">
-        <span className="text-[.9rem] text-tertiary">
-         Share on
-        </span>
-        <div className="text-white text-[1rem] flex justify-center items-center gap-x-3">
-         <AiOutlineInstagram className="hover:scale-125 transition-all duration-300 cursor-pointer" />
-         <RiTwitterXFill className="hover:scale-125 transition-all duration-300 cursor-pointer" />
-         <FaFacebookF className="hover:scale-125 transition-all duration-300 cursor-pointer" />
-         <FaLinkedinIn className="hover:scale-125 transition-all duration-300 cursor-pointer" />
-        </div>
-       </p>
-                  </form>
-
-
-              </div>
-          </div>
-    </section>
-  )
-}
-
-export default ContactHero
+export default ContactHero;
