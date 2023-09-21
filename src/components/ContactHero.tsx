@@ -11,7 +11,7 @@ import whiteStar from "../assets/whiteStar.png";
 
 
 const ContactHero = () => {
- const [name, setName] = useState("");
+
  return (
   <section className="overflow-hidden ">
    <div className="max-w-[1100px] mx-auto grid grid-cols-1 md:grid-cols-5 place-items-star max-sm:pt-1 max-sm:pb-5 md:pt-28 md:pb-24 bordr sm:px-6 md:px-16 relative over h-fit">
@@ -66,7 +66,7 @@ const ContactHero = () => {
       08:00am - 05:00pm
      </p>
 
-     <p className="flex justify-start items-start gap-y-2 flex-col mt-4">
+     <div className="flex justify-start items-start gap-y-2 flex-col mt-4">
       <span className="text-[.9rem] text-tertiary">
        Share on
       </span>
@@ -76,13 +76,12 @@ const ContactHero = () => {
        <FaFacebookF className="hover:scale-125 transition-all duration-300 cursor-pointer" />
        <FaLinkedinIn className="hover:scale-125 transition-all duration-300 cursor-pointer" />
       </div>
-     </p>
+     </div>
     </div>
 
     {/* contact from */}
     <ContactForm
-     name={name}
-     setName={setName}
+     
     />
    </div>
   </section>

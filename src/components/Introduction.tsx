@@ -2,11 +2,20 @@ import img from "../assets/introImage.png";
 import arrow from "../assets/arrow.png";
 import colorStar from "../assets/colorStar.png";
 
+import { motion } from "framer-motion";
+
+
+
 const Introduction = () => {
  return (
   <section className="-mt-[165px] md:-mt-[85px] relative border-y border-zinc-700 py-10 max-sm:border-t-0 w-full overflow-hidde">
    <div className="grid grid-cols-1 md:grid-cols-2 place-items-center place-content-center gap-4 gap-y-7 max-w-[1100px] mx-auto md:mt-7 relative">
-    <div className="md:h-[400px] px-12 relative">
+    <motion.div 
+    initial={{ x: -100, opacity: 0 }}
+    whileInView={{ x: 0, opacity: 1 }}
+    transition={{ duration: 1.5 }}
+    viewport={{ once: true }}
+    className="md:h-[400px] px-12 relative">
      <img
       src={img}
       alt="image"
@@ -25,13 +34,19 @@ const Introduction = () => {
       alt="star-icon"
       className="absolute w-7 md:w-12 left-[45%] md:left-[86%] -bottom-7"
      />
-    </div>
+    </motion.div>
 
     {/* text */}
 
-    <div className="md:text-left text-center flex flex-col md:items-start items-center max-sm:mt-7 max-sm:px-10 relative">
+    <motion.div 
+    initial={{ x: 100, opacity: 0 }}
+    whileInView={{ x: 0, opacity: 1 }}
+    transition={{ duration: 1.5 }}
+    viewport={{ once: true }}
+    className="md:text-left text-center flex flex-col md:items-start items-center max-sm:mt-7 max-sm:px-10 relative">
      <h2 className="text-[1.3rem] font-bold text-white leading-none md:text-[1.9rem]">
-      Introduction to getlinked
+
+Introduction to getlinked
      </h2>
      <h2 className="text-[1.3rem] font-bold text-tertiary leading-none md:text-[1.9rem] mt-3 md:mt-3">
       tech Hackathon 1.0
@@ -53,7 +68,7 @@ const Introduction = () => {
       alt="star-icon"
       className="absolute w-2 md:w-4 md:right-20 right-14 top-[10%]"
      />
-    </div>
+    </motion.div>
    </div>
   </section>
  );

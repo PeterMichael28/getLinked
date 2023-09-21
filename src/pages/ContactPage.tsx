@@ -2,6 +2,7 @@ import Header from "../components/Header";
 import ContactHero from "../components/ContactHero";
 
 
+
 const ContactPage = () => {
 
 
@@ -11,7 +12,7 @@ const ContactPage = () => {
     <Header />
     <ContactHero />
 
-   
+ 
             
         </main>
     )

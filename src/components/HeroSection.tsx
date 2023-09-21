@@ -9,6 +9,8 @@ import whiteStar from "../assets/whiteStar.png";
 import graystar from "../assets/greyStar.png";
 import Button from "./Button";
 import { useNavigate } from "react-router-dom";
+import { motion } from "framer-motion";
+
 
 const HeroSection = () => {
  const [mousePosition, setMousePosition] = useState({
@@ -24,7 +26,7 @@ const HeroSection = () => {
   setMousePosition({ x: e.clientX, y: e.clientY });
  };
 
- const navigate = useNavigate()
+ const navigate = useNavigate();
 
  return (
   <section
@@ -70,7 +72,13 @@ const HeroSection = () => {
     <div className="w-full md:w-[70rem] md:h-[40rem] h-[70vh] bg-no-repeat bg-cover bg-right bg-bgBlur absolute -left-[3rem] top-0 md:-top-[7rem] md:-left-[5rem] mix-blend-hard-light opacity-[1] blur-xl"></div>
 
     {/* ignite */}
-    <p className="md:text-[2rem] text-[1rem] italic font-bold w-full md:text-right relative text-center">
+    <motion.p
+     initial={{ y: -50, opacity: 0 }}
+     whileInView={{ y: 0, opacity: 1 }}
+     transition={{ duration: 1 }}
+     viewport={{ once: true }}
+     className="md:text-[2rem] text-[1rem] italic font-bold w-full md:text-right relative text-center"
+    >
      <span>
       Igniting a Revolution in{" "}
       <span className="relative">
@@ -82,13 +90,19 @@ const HeroSection = () => {
        />
       </span>
      </span>
-    </p>
+    </motion.p>
 
     <div className="grid w-full grid-cols-1 md:grid-cols-2 place-items-start pt-16 gap-y-10">
      {/* text */}
      <div className="flex md:items-start justify-center max-sm:text-center flex-col items-center">
       <div className="w-full md:w-[120%] ">
-       <h1 className="font-bold flex items-center md:justify-start justify-center max-sm:text-center gap-1 text-[2rem] md:text-[4.5rem] leading-none font-clas relative max-sm:px-7">
+       <motion.h1
+        initial={{ y: -50, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 1, delay: 1 }}
+        viewport={{ once: true }}
+        className="font-bold flex items-center md:justify-start justify-center max-sm:text-center gap-1 text-[2rem] md:text-[4.5rem] leading-none font-clas relative max-sm:px-7"
+       >
         <span>
          getlinked{" "}
          <span className="relative">
@@ -102,8 +116,14 @@ const HeroSection = () => {
         </span>
 
         {/* bulb */}
-       </h1>
-       <h1 className="font-extrabold flex items-center  md:justify-start md:mt-2 justify-center max-sm:text-center text-[2rem] md:text-[4.5rem] leading-none font-clas w-full max-sm:-mt-3 relative z-10">
+       </motion.h1>
+       <motion.h1
+        initial={{ y: -50, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 1, delay: 2 }}
+        viewport={{ once: true }}
+        className="font-extrabold flex items-center  md:justify-start md:mt-2 justify-center max-sm:text-center text-[2rem] md:text-[4.5rem] leading-none font-clas w-full max-sm:-mt-3 relative z-10"
+       >
         <span>Hackathon</span>
         <span className="text-[#D434FE]">1.0</span>
 
@@ -120,15 +140,23 @@ const HeroSection = () => {
          alt=""
          className=" scale-[.5] md:scale-[.8] -ml-8 md:-ml-3 animate-pulse"
         />
-       </h1>
+       </motion.h1>
       </div>
 
-      <p className="md:text-[1.1rem] text-white md:w-[88%] mb-7 max-sm:text-center max-sm:-mt-3 max-sm:px-5">
+      <motion.p 
+      initial={{ y: -50, opacity: 0 }}
+      whileInView={{ y: 0, opacity: 1 }}
+      transition={{ duration: 1, delay: 3 }}
+      viewport={{ once: true }}
+      className="md:text-[1.1rem] text-white md:w-[88%] mb-7 max-sm:text-center max-sm:-mt-3 max-sm:px-5">
        Participate in getlinked tech Hackathon 2023 stand a
        chance to win a Big prize
-      </p>
+      </motion.p>
 
-      <Button text="Register" handleClick={() => navigate('/register')}/>
+      <Button
+       text="Register"
+       handleClick={() => navigate("/register")}
+      />
 
       {/* counter */}
       <div className="md:mt-10 mt-6 max-sm:mb-5">
@@ -145,7 +173,7 @@ const HeroSection = () => {
       <img
        src={img2}
        alt=""
-       className="w-full h-[500px] object-contain relative -top-[6rem] md:-top-11 md:-right-14 z-20 grey mix-blend-plus-lighter"
+       className="w-full h-[500px] object-contain relative -top-[6rem] md:-top-11 md:-right-3 z-20 grey mix-blend-plus-lighter"
       />
 
       {/* first blur */}
