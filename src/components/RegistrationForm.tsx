@@ -286,7 +286,7 @@ function RegisterForm() {
 
    <Modal
     active={openModal}
-    setActive={setOpenModal}
+
     children={
      <div className="flex justify-center items-center text-center flex-col text-white gap-y-3">
       <img

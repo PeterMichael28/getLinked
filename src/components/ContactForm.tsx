@@ -122,7 +122,7 @@ function ContactForm() {
 
                     { error && <p className="-mb-3 mt-3 text-red-500 text-[.7rem]">Error sending message, try again later!!!</p>}
        <div className={`${error ? 'mt-0' : 'mt-4'}`}>
-        <Button text={loading ? "Submitting..." : "Submit"} className="" type='submit'/>
+        <Button text={loading ? "Submitting..." : "Submit"} className="" />
        </div>
    
        {/* share on */}
@@ -138,7 +138,7 @@ function ContactForm() {
         </div>
        </div>
       </form>
-            <Modal active={ openModal } setActive={ setOpenModal } children={
+            <Modal active={ openModal } children={
                 <div className="flex justify-center items-center text-center flex-col text-white gap-y-3">
      <img
       src={img}
