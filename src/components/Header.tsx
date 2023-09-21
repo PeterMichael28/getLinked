@@ -24,13 +24,13 @@ const Header = () => {
 
  return (
   <header className=" py-5 border-b border-slate-700 relative overflow-hidde">
-   <div className="flex items-center justify-between max-w-[1100px] mx-auto max-sm:px-5">
+   <div className="flex items-center justify-between max-w-[1100px] mx-auto max-sm:px-8">
     {/* logo */}
     <img
      src={img}
      width={150}
      alt="logo"
-     className="object-contain w-[150px] h-auto"
+     className="object-contain w-[120px] md:w-[150px] h-auto"
     />
 
     <nav className=" gap-x-28 items-center justify-end hidden md:flex relative z-[100]">
@@ -38,7 +38,7 @@ const Header = () => {
       <li className="navLinks"><Link to='#timeline'>Timeline</Link> </li>
       <li className="navLinks">Overview</li>
       <li className="navLinks"><Link to='/'>FAQs</Link> </li>
-      <li className="navLinks">Contact</li>
+      <li className="navLinks"><Link to='/contact'>Contact</Link></li>
      </ul>
 
    

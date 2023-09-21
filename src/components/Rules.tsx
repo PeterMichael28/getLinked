@@ -5,13 +5,13 @@ import whiteStar from "../assets/whiteStar.png";
 
 const Rules = () => {
  return (
-  <section className=" md:mt-7 relative border-b border-zinc-700 py-2 pb-10 ">
+  <section className=" md:mt-7 relative border-b border-zinc-700 py-2 pb-10 overflow-">
 
     {/* first blur */}
     <div className="w-full md:w-[80rem] md:h-[40rem] h-[70vh] bg-no-repeat bg-contain bg-right bg-bgBlur absolute -left-[7rem] -top-[8rem] md:-top-[7rem] md:-left-[22rem] mix-blend-hard-light opacity-[1] blur-xl"></div>
 
     {/* second blur */}
-    <div className="w-full md:w-[70rem] md:h-[40rem] h-[70vh] bg-no-repeat bg-contain bg-right bg-bgBlur absolute left-[9rem] top-[30%] md:top-[7rem] md:left-[45%] mix-blend-hard-light opacity-[1] blur-2xl  max-sm:hidden"></div>
+    <div className="w-full md:w-[70rem] md:h-[40rem] h-[70vh] bg-no-repeat bg-contain bg-right bg-bgBlur absolute left-[9rem] top-[30%] md:top-[7rem] md:left-[45%] mix-blend-hard-light opacity-[1] blur-2xl  max-sm:hidde"></div>
 
 
 

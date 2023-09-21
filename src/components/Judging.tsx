@@ -13,7 +13,7 @@ const Judging = () => {
    <div className="w-full md:w-[80rem] md:h-[40rem] h-[70vh] bg-no-repeat bg-contain bg-right bg-bgBlur absolute -left-[7rem] -top-[8rem] md:top-[3rem] md:-left-[37rem] mix-blend-hard-light opacity-[1] blur-xl"></div>
 
    {/* second blur */}
-   <div className="w-full md:w-[80rem] md:h-[40rem] h-[70vh] bg-no-repeat bg-contain bg-right bg-bgBlur absolute left-[9rem] -bottom-[20%] md:top-[20rem] md:left-[32%] mix-blend-hard-light opacity-[1] blur-xl max-sm:hidden"></div>
+   <div className="w-full md:w-[80rem] md:h-[40rem] h-[70vh] bg-no-repeat bg-contain bg-right bg-bgBlur absolute left-[9rem] -bottom-[20%] md:top-[20rem] md:left-[32%] mix-blend-hard-light opacity-[1] blur-xl max-sm:hidde"></div>
    <img
     src={whiteStar}
     alt="star-icon"

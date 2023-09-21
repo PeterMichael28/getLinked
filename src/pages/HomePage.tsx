@@ -17,7 +17,7 @@ function HomePage() {
 
   return (
     <>
-      <main className=''>
+      <main className='overflow-x-hidden'>
 
     <Header />
    

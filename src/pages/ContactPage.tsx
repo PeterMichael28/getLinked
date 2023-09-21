@@ -1,10 +1,19 @@
+import Header from "../components/Header";
+import ContactHero from "../components/ContactHero";
 
 
 const ContactPage = () => {
 
 
     return (
-        <div>Hello</div>
+        <main className='overflow-x-hidden'>
+
+    <Header />
+    <ContactHero />
+
+   
+            
+        </main>
     )
 }
 
