@@ -3,11 +3,12 @@ import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import { RiTwitterXFill } from "react-icons/ri";
 import Input from "./Input";
 import Button from "./Button";
-import { useEffect, useState } from "react";
+import { useEffect,  useState } from "react";
 import Modal from "./Modal";
 import img from "../assets/congratulation.png";
 import { backendurl } from "../static/data";
 import axios from "axios";
+
 
 function ContactForm() {
  const [name, setName] = useState("");
@@ -17,21 +18,40 @@ function ContactForm() {
  const [loading, setLoading] = useState(false);
  const [openModal, setOpenModal] = useState(false);
  const [error, setError] = useState(false);
+ const [errorMsg, setErrorMsg] = useState('');
+
+
+
+
+  //  email validation
+ 
+  const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+
 
  // setting and clearing error message
  useEffect(() => {
   const clearError = setTimeout(() => {
    setError(false);
+   setErrorMsg('')
   }, 5000);
 
   return () => clearTimeout(clearError);
  }, [error]);
+
+
+
 
  const handleSubmit = async (e: {
   preventDefault: () => void;
  }) => {
   e.preventDefault();
   setLoading(true);
+
+   if (  !emailRegex.test( email ) ) {
+    // toast.error("Invalid email format!!!");
+setErrorMsg('Invalid email format!!!')
+   return;
+  }
   try {
    const response = await axios.post(
     `${backendurl}/contact-form`,
@@ -59,10 +79,12 @@ function ContactForm() {
    // Set loading state to false when an error occurs
    setLoading(false);
    setError(true);
-
+setErrorMsg('Error sending message, try again later!!!')
    console.error("Error submitting data:", error);
   }
  };
+
+
 
  return (
   <div className="md:bg-[rgba(255,255,255,0.03)] rounded-xl md:shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] px-8 md:px-14 py-8 col-span-3 md:ml-16">
@@ -115,9 +137,9 @@ function ContactForm() {
      required
     />
 
-    {error && (
+    {(error && errorMsg) && (
      <p className="-mb-3 mt-3 text-red-500 text-[.7rem]">
-      Error sending message, try again later!!!
+      {errorMsg}
      </p>
     )}
     <div className={`${error ? "mt-0" : "mt-4"}`}>
@@ -140,7 +162,7 @@ function ContactForm() {
      </div>
     </div>
    </form>
-   <Modal
+ <Modal
     active={openModal}
     children={
      <div className="flex justify-center items-center text-center flex-col text-white gap-y-3">

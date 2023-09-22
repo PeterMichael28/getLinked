@@ -20,6 +20,10 @@ function RegisterForm() {
  const [fetchedCategories, setFetchedCategories] = useState(
   []
  );
+ const [errorMsg, setErrorMsg] = useState('');
+
+
+ const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
 
  // fetch categories
  useEffect(() => {
@@ -44,6 +48,8 @@ function RegisterForm() {
  useEffect(() => {
   const clearError = setTimeout(() => {
    setError(false);
+   setErrorMsg('')
+
   }, 5000);
 
   return () => clearTimeout(clearError);
@@ -54,6 +60,11 @@ function RegisterForm() {
  }) => {
   e.preventDefault();
   setLoading(true);
+  if (  !emailRegex.test( email ) ) {
+    // toast.error("Invalid email format!!!");
+setErrorMsg('Invalid email format!!!')
+   return;
+  }
 
   try {
    const response = await axios.post(
@@ -83,6 +94,8 @@ function RegisterForm() {
   } catch (error) {
    setLoading(false);
    setError(true);
+setErrorMsg('Error sending message, try again later!!!')
+
    console.error("Error submitting data:", error);
   }
  };
@@ -263,9 +276,9 @@ function RegisterForm() {
     </div>
 
     {/* register button */}
-    {error && (
-     <p className=" text-red-500 text-[.7rem]">
-      Error registering account, try again later!!!
+    {(error && errorMsg) && (
+     <p className="-mb-3 mt-3 text-red-500 text-[.7rem]">
+      {errorMsg}
      </p>
     )}
     <div className="group w-full h-fit p-[1px] bg-bgGradient rounded-[0.25rem] overflow-hidden borde transition-all duration-500">

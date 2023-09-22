@@ -1,13 +1,17 @@
+
+
 type ModalProps = {
  active: boolean;
  children: React.ReactNode;
 };
 
 const Modal = ({ active, children }: ModalProps) => {
+
+  
  return (
   <section
-   className={`fixed top-0 left-0  w-full h-full bg-[rgba(21,14,40,0.93)] z-[300] flex justify-center items-center max-sm:px-4 transition-all duration-300 ${
-    active ? "block" : "hidden"
+   className={`fixed top-0 left-0  w-full h-full bg-[rgba(21,14,40,0.93)] z-[300] flex justify-center items-center max-sm:px-4 transition-all duration-500 origin-center  ${
+    active ? "scale-100" : "scale-0"
    }`}
   >
    <div
