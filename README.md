@@ -1,5 +1,5 @@
 
-# React Project ReadMe
+# Hackathon GetLinked Project
 
 ## Project Overview
 This React project is a web application that incorporates several key features, including a homepage, a registration page, and a contact page. The application utilizes popular technologies such as React, Tailwind CSS, Framer Motion for animations, and React Router DOM for routing.
