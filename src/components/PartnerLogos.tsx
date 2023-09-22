@@ -7,7 +7,7 @@ import logo6 from "../assets/logo6.png";
 
 const PartnerLogos = () => {
  return (
-  <div className="px-12 md:px-28 md:py-44 py-10 max-w-[1100px] w-full mx-auto border border-tertiary rounded-md">
+  <div className="px-12 md:px-28 md:py-24 py-10 max-w-[1100px] w-full mx-auto border border-tertiary rounded-md">
    {/* #110B22 */}
    <div className="grid grid-cols-3 place-items-center place-content-center relative">
     {/* small ball
