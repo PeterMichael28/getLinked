@@ -100,7 +100,7 @@ const HeroSection = () => {
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 1, delay: 1 }}
         viewport={{ once: true }}
-        className="font-bold flex items-center md:justify-start justify-center max-sm:text-center gap-1 text-[2rem] md:text-[4.5rem] leading-none font-clas relative max-sm:px-7"
+        className="font-bold flex items-center md:justify-start justify-center max-sm:text-center gap-1 text-[2.2rem] md:text-[4.5rem] leading-none font-clas relative max-sm:px-7"
        >
         <span>
          getlinked{" "}
@@ -121,7 +121,7 @@ const HeroSection = () => {
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 1, delay: 2 }}
         viewport={{ once: true }}
-        className="font-extrabold flex items-center  md:justify-start md:mt-2 justify-center max-sm:text-center text-[2rem] md:text-[4.5rem] leading-none font-clas w-full max-sm:-mt-3 relative z-10"
+        className="font-extrabold flex items-center  md:justify-start md:mt-2 justify-center max-sm:text-center text-[2.2rem] md:text-[4.5rem] leading-none font-clas w-full max-sm:-mt-3 relative z-10"
        >
         <span>Hackathon</span>
         <span className="text-[#D434FE]">1.0</span>

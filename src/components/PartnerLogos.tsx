@@ -24,7 +24,7 @@ const PartnerLogos = () => {
      />
 
      {/* small ball */}
-     <div className="absolute w-7 h-7 md:w-8 md:h-8 lg:w-10 lg:h-10 rounded-full lg:-right-[8%] lg:top-[85%] md:-right-[12%] md:top-[76%] -right-[12%] top-[89%] bg-[#160b30] lg:bg-[#110B20] overflow-hidden z-20" />
+     <div className="absolute w-7 h-7 md:w-8 md:h-8 lg:w-10 lg:h-10 rounded-full lg:-right-[8%] lg:top-[85%] md:-right-[12%] md:top-[76%] -right-[12.3%] top-[89%] bg-[#160b30] lg:bg-[#110B20] overflow-hidden z-20" />
     </div>
 
     <div className="w-full h-full py-4 md:py-5 sm:px-10 px-3 flex justify-center items-center border-r-[3px] border-b-[3px] border-tertiary relative">
@@ -35,7 +35,7 @@ const PartnerLogos = () => {
      />
 
      {/* small ball */}
-     <div className="absolute w-7 h-7 md:w-8 md:h-8 lg:w-10 lg:h-10 rounded-full lg:-right-[8%] lg:top-[85%] md:-right-[12%] md:top-[76%] -right-[12%] top-[89%] bg-[#160b30] lg:bg-[#110B20] overflow-hidden z-20" />
+     <div className="absolute w-7 h-7 md:w-8 md:h-8 lg:w-10 lg:h-10 rounded-full lg:-right-[8%] lg:top-[85%] md:-right-[12%] md:top-[76%] -right-[12.3%] top-[89%] bg-[#160b30] lg:bg-[#110B20] overflow-hidden z-20" />
     </div>
     <div className="w-full h-full py-4 md:py-5 lg:px-20 md:px-16 sm:px-10 px-3 flex justify-center items-center borde-r border-b-[3px] border-tertiary">
      <img
